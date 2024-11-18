@@ -11,8 +11,6 @@ export const DataProvider = ({ children }) => {
   const [input, setInput] = useState("");
   const [Category, setCategory] = useState('');
   const [addtoCart, setAddToCart] = useState([]); // Cart state
-  const [price, setPrice] = useState(0); // Total price state
-  const [quantity, setQuantity] = useState(0); // Quantity state
 
   // Load the JSON file
   useEffect(() => {
@@ -86,8 +84,15 @@ export const DataProvider = ({ children }) => {
 
   // Remove item from cart
   const removeHandeler = (productId) => {
-    setAddToCart((prevCart) => prevCart.filter((item) => item.id !== productId));
+    setAddToCart((prevCart) => {
+      const updatedCart = prevCart.filter((item) => item.id !== productId);
+      localStorage.setItem('cart', JSON.stringify(updatedCart)); 
+      return updatedCart; 
+    });
   };
+
+  const total = addtoCart.length;
+  console.log(total,"total length");
 
   return (
     <DataContext.Provider
@@ -102,6 +107,7 @@ export const DataProvider = ({ children }) => {
         addToCartfun,
         addtoCart,
         removeHandeler,
+        total
       }}
     >
       {children}

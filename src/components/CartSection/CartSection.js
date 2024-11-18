@@ -11,14 +11,14 @@ const CartSection = () => {
   }
 
   return (
-    <div className='p-4'>
-      <h1 className='text-3xl font-bold'>Your addtoCart</h1>
+    <div className=''>
+      <h1 className='text-3xl font-bold capitalize text-gray-500 underline'>Your addto Cart</h1>
       {addtoCart.length === 0 ? (
-        <p>Your addtoCart is empty!</p>
+        <div className='flex w-[80vw] h-[80vh] justify-center items-center '><p className='uppercase text-xl text-red-700'>Your addtoCart is empty!</p></div>
       ) : (
         <div className='mt-4'>
           {addtoCart.map((item,index) => (
-            <div key={item.id} className='flex justify-between items-center p-4 border-b w-full'>
+            <div key={item.id} className='flex justify-between items-center sm:p-4 p-0 border-b w-full'>
               <div className='w-1/2'>
                 <img
                   className='w-20 h-20'
@@ -26,17 +26,17 @@ const CartSection = () => {
                   alt={item.name}
                 />
               </div>
-              <div className='flex justify-between w-1/2'>
+              <div className='flex justify-between items-center sm:gap-0 gap-2 w-1/2'>
                 <h2 className='text-xl font-bold'>{item.name}</h2>
                 <p>{`$${item.price}`}</p>
-                <span onClick={removeHandeler(index)}><FaTrashAlt /></span>
+                <span onClick={() => removeHandeler(item.id)}><FaTrashAlt /></span>
               </div>
               
             </div>
           ))}
-          <div>
-                <h1>Total</h1>
-                <p>{`$${addtoCart.reduce((acc, curr) => acc + curr.price, 0)}`}</p>
+          <div className='flex justify-between mt-5'>
+                <h1 className='text-2xl font-semibold text-gray-500'>Total</h1>
+                <p className='text-2xl font-semibold text-gray-500'>{`$${addtoCart.reduce((acc, curr) => acc + curr.price, 0)}`}</p>
               </div>
         </div>
       )}
