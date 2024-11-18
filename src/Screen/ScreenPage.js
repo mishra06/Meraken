@@ -1,12 +1,12 @@
-import React from 'react'
-import Contant from '../components/Contants/Contant'
+import React from 'react';
+import Contant from '../components/Contants/Contant';
 
 const ScreenPage = () => {
   return (
     <div>
-      <Contant/>
+      <Contant />
     </div>
-  )
-}
+  );
+};
 
-export default ScreenPage
+export default ScreenPage;

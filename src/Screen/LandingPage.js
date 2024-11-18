@@ -1,20 +1,26 @@
-import React from 'react'
-import ScreenPage from './ScreenPage'
-// import { Outlet } from 'react-router-dom'
+import React from 'react';
+import { Outlet } from 'react-router-dom'; // Import Outlet
+import { useNavigate } from 'react-router-dom';
+
 
 const LandingPage = () => {
-  return (
-    <div className="App flex w-[100%]  h-[100vh] flex-col justify-center items-center">
-      <div className='flex w-full justify-center h-[10vh] border-2 border-black'>
-          <h1 className='text-black-800 font-bold text-3xl uppercase'>Product Catalog</h1>
-      </div>
-      <div className='h-[90vh] w-[85%] '>
-        <ScreenPage/>
-      </div>
-      
-      
-    </div>
-  )
-}
 
-export default LandingPage
+  const navigate = useNavigate();
+  return (
+    <div className="App flex w-[100%] h-[100vh] flex-col justify-center items-center">
+      {/* Header Section */}
+      <div className='flex w-full justify-around gap-10 items-center h-[10vh] '>
+        <h1 className='text-black-800 font-bold text-3xl uppercase cursor-pointer' onClick={() => navigate("/")}>Product Catalog</h1>
+        <button className='h-[5vh] w-[10vw] mt-3 bg-black text-white font-bold rounded-md' onClick={() => navigate("/cart")}>Cart</button>
+      </div>
+      
+
+      {/* Content Section */}
+      <div className='h-[90vh] w-[85%]'>
+        <Outlet /> {/* Renders child routes here */}
+      </div>
+    </div>
+  );
+};
+
+export default LandingPage;

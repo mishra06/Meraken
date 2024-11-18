@@ -10,14 +10,17 @@ export const DataProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [input, setInput] = useState("");
   const [Category, setCategory] = useState('');
+  const [addtoCart, setAddToCart] = useState([]); // Cart state
+  const [price, setPrice] = useState(0); // Total price state
+  const [quantity, setQuantity] = useState(0); // Quantity state
 
   // Load the JSON file
   useEffect(() => {
-    fetch('/Data.json') 
+    fetch('/Data.json')
       .then((response) => response.json())
       .then((jsonData) => {
-        setOriginalData(jsonData); 
-        setData(jsonData); 
+        setOriginalData(jsonData);
+        setData(jsonData);
         setLoading(false);
       })
       .catch((error) => {
@@ -26,13 +29,26 @@ export const DataProvider = ({ children }) => {
       });
   }, []);
 
+  // Load cart from local storage when the app loads
+  useEffect(() => {
+    const savedCart = JSON.parse(localStorage.getItem('cart')) || [];
+    setAddToCart(savedCart); // Set cart state to saved cart
+  }, []);
+
+  // Save cart to local storage whenever the cart state changes
+  useEffect(() => {
+    if (addtoCart.length > 0) {
+      localStorage.setItem('cart', JSON.stringify(addtoCart)); // Save cart to local storage
+    }
+  }, [addtoCart]);
+
   // Handle search input
   const InputHandler = (e) => {
     const newVal = e.target.value;
     setInput(newVal);
 
     if (newVal) {
-      const filtered = originalData.filter(item => 
+      const filtered = originalData.filter(item =>
         item.name.toLowerCase().includes(newVal.toLowerCase())
       );
       setData(filtered);
@@ -49,15 +65,45 @@ export const DataProvider = ({ children }) => {
       setData(originalData); // Reset to original data for 'All'
     } else {
       const filtered = originalData.filter(item => item.category === category);
-      setData(filtered);   // Reset the original data for filtered item 
+      setData(filtered);   // Reset the original data for filtered items
     }
   };
 
   // Generate unique categories
   const uniqueCategories = ['All', ...new Set(originalData.map(product => product.category))];
 
+  // Add to cart functionality
+  const addToCartfun = (product) => {
+    setAddToCart((prevCart) => {
+      // Check if the product is already in the cart
+      const isProductInCart = prevCart.some((item) => item.id === product.id);
+      if (isProductInCart) {
+        return prevCart; // If already in cart, do nothing
+      }
+      return [...prevCart, product]; // Add product to cart
+    });
+  };
+
+  // Remove item from cart
+  const removeHandeler = (productId) => {
+    setAddToCart((prevCart) => prevCart.filter((item) => item.id !== productId));
+  };
+
   return (
-    <DataContext.Provider value={{ data, loading, InputHandler, input, uniqueCategories, categoryFilter, Category }}>
+    <DataContext.Provider
+      value={{
+        data,
+        loading,
+        InputHandler,
+        input,
+        uniqueCategories,
+        categoryFilter,
+        Category,
+        addToCartfun,
+        addtoCart,
+        removeHandeler,
+      }}
+    >
       {children}
     </DataContext.Provider>
   );
