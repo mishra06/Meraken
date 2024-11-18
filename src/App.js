@@ -1,15 +1,20 @@
 
 import './App.css';
-import heading from "../src/assets/painting-orange.png"
+import CartSection from './components/CartSection/CartSection';
+import Details from './components/DetailPage/Details';
+import LandingPage from './Screen/LandingPage';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App flex w-[100%] border-2 border-black h-[100vh]">
-      <div className='flex w-full justify-center'>
-          <h1 className='text-black-800 font-bold text-3xl uppercase'>Product Catalog</h1>
-      </div>
-      
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/:id" element={<Details/>}/>
+        {/* <Route path="/cart" element={<CartSection/>}/> */}
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 

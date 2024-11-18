@@ -1,0 +1,203 @@
+[
+    {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "category": "Electronics",
+        "price": 99.99,
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D",
+        "description": "High-quality wireless headphones with noise cancellation."
+    },
+    {
+        "id": 2,
+        "name": "Smart Watch",
+        "category": "Electronics",
+        "price": 199.99,
+        "image": "https://img.freepik.com/premium-photo/apple-watch-with-black-band-white-clear-surface-png-transparent-background_94628-46793.jpg",
+        "description": "Stay connected on the go with this stylish smart watch."
+    },
+    {
+        "id": 3,
+        "name": "Bluetooth Speaker",
+        "category": "Electronics",
+        "price": 49.99,
+        "image": "https://www.jblonlinestore.com/cdn/shop/files/jbl-go-4-black-portable-bluetooth-speaker-hero-singapore-862791.png?v=1713922128",
+        "description": "Portable Bluetooth speaker with excellent sound quality."
+    },
+    {
+        "id": 4,
+        "name": "4K Ultra HD TV",
+        "category": "Electronics",
+        "price": 799.99,
+        "image": "https://e7.pngegg.com/pngimages/852/139/png-clipart-black-flat-screen-tv-led-backlit-lcd-television-set-high-definition-television-smart-tv-led-tv-miscellaneous-television.png",
+        "description": "Experience stunning visuals with this 4K Ultra HD TV."
+    },
+    {
+        "id": 5,
+        "name": "Laptop",
+        "category": "Electronics",
+        "price": 899.99,
+        "image": "https://pngimg.com/d/macbook_PNG40.png",
+        "description": "Powerful laptop for work and play."
+    },
+    {
+        "id": 6,
+        "name": "Air Fryer",
+        "category": "Home Appliances",
+        "price": 89.99,
+        "image": "https://png.pngtree.com/png-vector/20240123/ourmid/pngtree-air-fryer-png-file-black-electric-deep-fryer-front-view-png-image_11460068.png",
+        "description": "Healthy cooking with less oil using this air fryer."
+    },
+    {
+        "id": 7,
+        "name": "Vacuum Cleaner",
+        "category": "Home Appliances",
+        "price": 199.99,
+        "image": "https://pngimg.com/d/vacuum_cleaner_PNG24.png",
+        "description": "Efficient vacuum cleaner for a spotless home."
+    },
+    {
+        "id": 8,
+        "name": "Coffee Maker",
+        "category": "Home Appliances",
+        "price": 49.99,
+        "image": "https://pngimg.com/d/coffee_machine_PNG17307.png",
+        "description": "Brew your favorite coffee with this easy-to-use coffee maker."
+    },
+    {
+        "id": 9,
+        "name": "Blender",
+        "category": "Home Appliances",
+        "price": 29.99,
+        "image": "https://www.pngarts.com/files/12/Blender-PNG-Download-Image.png",
+        "description": "Blend smoothies and shakes with this powerful blender."
+    },
+    {
+        "id": 10,
+        "name": "Refrigerator",
+        "category": "Home Appliances",
+        "price": 599.99,
+        "image": "https://w7.pngwing.com/pngs/499/386/png-transparent-white-top-mount-refrigerator-refrigerator-battery-charger-nepalis-in-japan-taobao-silver-mini-fridge-household-kitchen-appliance-refrigeration-thumbnail.png",
+        "description": "Spacious refrigerator with advanced cooling technology."
+    },
+    {
+        "id": 11,
+        "name": "Men's T-Shirt",
+        "category": "Fashion",
+        "price": 19.99,
+        "image": "https://5.imimg.com/data5/JR/IX/MY-10031045/letter-printed-short-sleeve-mens-t-shirt.png",
+        "description": "Comfortable and stylish men's t-shirt."
+    },
+    {
+        "id": 12,
+        "name": "Women's Dress",
+        "category": "Fashion",
+        "price": 39.99,
+        "image": "https://static.vecteezy.com/system/resources/previews/042/154/774/non_2x/ai-generated-beautiful-women-dress-isolated-on-transparent-background-free-png.png",
+        "description": "Elegant dress perfect for any occasion."
+    },
+    {
+        "id": 13,
+        "name": "Sneakers",
+        "category": "Fashion",
+        "price": 69.99,
+        "image": "https://toppng.com/uploads/preview/blue-high-sneakers-11533045027c8yyhxclcx.png",
+        "description": "Stylish and comfortable sneakers for everyday wear."
+    },
+    {
+        "id": 14,
+        "name": "Leather Jacket",
+        "category": "Fashion",
+        "price": 199.99,
+        "image": "https://w7.pngwing.com/pngs/578/800/png-transparent-leather-jacket-sleeve-jacket-textile-leather-black-thumbnail.png",
+        "description": "Classic leather jacket for a timeless look."
+    },
+    {
+        "id": 15,
+        "name": "Wrist Watch",
+        "category": "Fashion",
+        "price": 79.99,
+        "image": "https://w7.pngwing.com/pngs/921/616/png-transparent-rolex-submariner-rolex-gmt-master-ii-rolex-datejust-rolex-daytona-rolex-sea-dweller-rolex-watch-accessory-rolex-metal-thumbnail.png",
+        "description": "Stylish wrist watch with a sleek design."
+    },
+    {
+        "id": 16,
+        "name": "Running Shoes",
+        "category": "Sports",
+        "price": 89.99 ,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0r72z_o16p70VS1hWfVJXeOguPMGHlAK-8A&s",
+        "description": "Lightweight running shoes designed for comfort and performance."
+    },
+    {
+        "id": 17,
+        "name": "Yoga Mat",
+        "category": "Sports",
+        "price": 29.99,
+        "image": "https://res.cloudinary.com/truecarecdn/image/upload/v1657540836/Yoga-Mat-PNG-Transparent-removebg-preview.png",
+        "description": "Non-slip yoga mat for a stable workout experience."
+    },
+    {
+        "id": 18,
+        "name": "Dumbbells",
+        "category": "Sports",
+        "price": 49.99,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDiHxHlgGtorwsyrGcc9ZNA7vNCI0bLc2f1Q&s",
+        "description": "Adjustable dumbbells for versatile strength training."
+    },
+    {
+        "id": 19,
+        "name": "Tennis Racket",
+        "category": "Sports",
+        "price": 89.99,
+        "image": "https://www.pngarts.com/files/3/Tennis-Racket-Free-PNG-Image.png",
+        "description": "High-performance tennis racket for competitive play."
+    },
+    {
+        "id": 20,
+        "name": "Bicycle",
+        "category": "Sports",
+        "price": 299.99,
+        "image": "https://w7.pngwing.com/pngs/228/766/png-transparent-mountain-bike-diamondback-bicycles-bicycle-frame-hybrid-bicycle-blue-mountain-bike-blue-bicycle-frame-bicycle.png",
+        "description": "Durable bicycle for commuting and leisure rides."
+    },
+    {
+        "id": 21,
+        "name": "Gaming Console",
+        "category": "Electronics",
+        "price": 499.99,
+        "image": "https://img.lovepik.com/element/40125/8565.png_1200.png",
+        "description": "Next-gen gaming console with immersive gameplay."
+    },
+    {
+        "id": 22,
+        "name": "Action Camera",
+        "category": "Electronics",
+        "price": 199.99,
+        "image": "https://purepng.com/public/uploads/large/purepng.com-gopro-action-camerago-proaction-camvideo-camaction-video-camstunt-cam-231519336247bww8n.png",
+        "description": "Capture your adventures with this compact action camera."
+    },
+    {
+        "id": 23,
+        "name": "Smart Home Hub",
+        "category": "Electronics",
+        "price": 149.99,
+        "image": "https://png.pngtree.com/png-vector/20240716/ourlarge/pngtree-smart-home-hub-on-transparent-png-image_13125054.png",
+        "description": "Control your smart home devices with this hub."
+    },
+    {
+        "id": 24,
+        "name": "Electric Toothbrush",
+        "category": "Health & Beauty",
+        "price": 59.99,
+        "image": "https://img.freepik.com/premium-psd/electric-toothbrush-png-isolated-white-background-transparent-background_1257099-15145.jpg",
+        "description": "Advanced electric toothbrush for superior oral care."
+    },
+    {
+        "id": 25,
+        "name": "Skincare Set",
+        "category": "Health & Beauty",
+        "price": 79.99,
+        "image": "https://w7.pngwing.com/pngs/657/894/png-transparent-skin-care-oriflame-face-cosmetics-true-cream-people-gel-thumbnail.png",
+        "description": "Complete skincare set for a radiant complexion."
+    }
+    
+]
