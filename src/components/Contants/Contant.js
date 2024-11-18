@@ -9,7 +9,7 @@ const Contant = () => {
     <div className='w-full flex flex-wrap h-full'>
 
       {/* Search and Filter Section */}
-      <div className='w-full justify-around items-center h-20 border-b-2 border-black flex flex-col sm:flex-row'>
+      <div className='w-full justify-around items-center h-20 border-b-2 border-black flex '>
 
         {/* ****************** Search Input **************} */}
         <input
